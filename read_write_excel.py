@@ -5,31 +5,31 @@ import xlrd
 import xlwt
 from datetime import date,datetime
 
-# def read_excle():
-#     workbook = xlrd.open_workbook('Methylated_RNA_sites.mRNA.xlsx')
-#     # print(workbook.sheet_names())
-#     sheet2_name = workbook.sheet_names()[1]
-#     print(sheet2_name)
-#
-#     sheet2 = workbook.sheet_by_index(1)
-#     sheet3 = workbook.sheet_by_name('AIR3')
-#     print(sheet2,sheet3)
-#
-#     print(sheet2.name,sheet2.nrows,sheet2.ncols)
-#
-#     rows = sheet2.row_values(24)
-#     cols = sheet2.col_values(2)
-#
-#     # print(rows,cols)
-#     print(rows)
-#
-#     print(sheet2.cell(24,3),sheet2.cell(24,3).value)
-#     print(sheet2.cell_value(23,6))
-#     print(sheet2.row(23)[2],sheet2.row(23)[2].value)
-#
-#     print(sheet2.cell(23,6).ctype)
-#
-# read_excle()
+def read_excle():
+    workbook = xlrd.open_workbook('Methylated_RNA_sites.mRNA.xlsx')
+    # print(workbook.sheet_names())
+    sheet2_name = workbook.sheet_names()[1]
+    print(sheet2_name)
+
+    sheet2 = workbook.sheet_by_index(1)
+    sheet3 = workbook.sheet_by_name('AIR3')
+    print(sheet2,sheet3)
+
+    print(sheet2.name,sheet2.nrows,sheet2.ncols)
+
+    rows = sheet2.row_values(24)
+    cols = sheet2.col_values(2)
+
+    # print(rows,cols)
+    print(rows)
+
+    print(sheet2.cell(24,3),sheet2.cell(24,3).value)
+    print(sheet2.cell_value(23,6))
+    print(sheet2.row(23)[2],sheet2.row(23)[2].value)
+
+    print(sheet2.cell(23,6).ctype)
+
+read_excle()
 
 
 
