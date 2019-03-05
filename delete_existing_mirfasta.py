@@ -2,7 +2,7 @@
 import os
 
 
-alldir = os.listdir(r'C:\Users\28277\Desktop\2018102928_CircRNAs_targetscan')
+alldir = os.listdir(r'C:\mirTarget_results\2018111419A_CircRNAs_targetscan')
 print(alldir[1:5])
 mirseq = {}
 with open('mature_hsa.fa','r') as f:
