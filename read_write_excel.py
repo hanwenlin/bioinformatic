@@ -11,6 +11,7 @@ def read_excle():
     sheet2_name = workbook.sheet_names()[1]
     print(sheet2_name)
 
+    sheet1 = workbook.sheets()[0]
     sheet2 = workbook.sheet_by_index(1)
     sheet3 = workbook.sheet_by_name('AIR3')
     print(sheet2,sheet3)
